@@ -1,24 +1,24 @@
-import{
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  // Navigate,
-} from "react-router-dom"
-import Login from "./Component/Login";
-import Register from "./Component/Register";
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import Landing from './components/Landing';
+import Register from './components/Register';
+import Login from './components/Login';
 
-function App(){
-  return(
-    <Register />
-      // <>
-      // <Router>
-      //   <Routes>
-      //        <Route path="/" element={<Login/>}/>
-      //        <Route path="/register" element={<Register/>}/>
-      //   </Routes>
-      // </Router>
-      // </>
-  )
-}
-
-export default App;
+export default function App() {
+  return (
+    <Router>
+        <Routes>
+          <Route path='/' element={<Landing/>}/>
+          <Route path='/register' element={<Register/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/logged-in' element={<Nav/>}>
+            <Route path='/logged-in/home' element={<Home/>}/>
+            <Route path='/logged-in/about' element={<AboutUs/>}/>
+          </Route>
+        </Routes>
+      </Router>
+  );
+};

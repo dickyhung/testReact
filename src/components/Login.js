@@ -30,7 +30,7 @@ export default function login() {
                     <input type="checkbox" className='form-check-input'></input>
                     <label htmlFor='check' className='form-check-label'>Remember me</label>   
                 </div>
-                <Link to= "/">
+                <Link to= "/logged-in/home">
                     <button type='submit' className='btn btn-success w-100 mt-2'>SIGN IN</button>
                 </Link>
                 <Link to = "/register">

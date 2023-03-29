@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Langkah - langkah ReactJs:
+npm i react-bootstrap
+npm i react-router-dom
+npm install axios --save
+npm install json-server
+
+jalanin db.json
+npx json-server -w db.json -p PORT berapa
+
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 
 function Register() {
   return (
@@ -23,9 +24,11 @@ function Register() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button className="d-flex justify-content-center" variant="primary" type="submit">
-        Submit
-      </Button>
+      <Link to="/login">
+        <Button className="d-flex justify-content-center" variant="primary" type="submit">
+          Submit
+        </Button>
+      </Link>
     </Form>
     </div>
    
