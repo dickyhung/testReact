@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Langkah - langkah ReactJs:
+### `npm i`
 ### `npm i react-bootstrap`
 ### `npm i react-router-dom`
 ### `npm install axios --save`
