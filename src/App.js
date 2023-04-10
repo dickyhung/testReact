@@ -22,5 +22,6 @@ export default function App() {
     </Router>
     // tambahin komen cek github desktop
     // tambahin komen lagi
+    // komen1
   );
 }
